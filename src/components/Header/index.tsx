@@ -6,7 +6,7 @@ import { GoHeart } from "react-icons/go";
 import { BsCart3 } from "react-icons/bs";
 import { useState } from "react";  // Import useState for handling dropdown state
 
-const page = () => {
+const Page = () => {
   // State to handle dropdown visibility
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -80,4 +80,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
