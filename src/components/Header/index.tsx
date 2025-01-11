@@ -22,7 +22,7 @@ const Page = () => {
 
         {/* Shop Item */}
         <Link
-          href="/shop"
+          href="/Shop"
           className="w-[42px] h-[24px] text-black text-sm font-medium text-left flex items-center hover:underline">
           Shop
         </Link>
@@ -45,16 +45,21 @@ const Page = () => {
       {/* Right-side Icons (Desktop View) */}
       <div className="gap-6 items-center absolute right-[20px] md:right-[50px] top-[36px] md:flex hidden">
         {/* Person with Exclamation Icon */}
+        <Link
+        href="/myAccount">
         <BsPersonExclamation className="text-xl text-black cursor-pointer hover:text-amber-500" />
-
+        </Link>
         {/* Search Icon */}
         <CiSearch className="text-xl text-black cursor-pointer hover:text-amber-500" />
 
         {/* Heart Icon */}
         <GoHeart className="text-xl text-black cursor-pointer hover:text-amber-500" />
 
-        {/* Cart Icon */}
+        {/* Cart Icon with link */}
+        <Link
+        href="/Cart">
         <BsCart3 className="text-xl text-black cursor-pointer hover:text-amber-500" />
+        </Link>
       </div>
 
       {/* Dropdown Button (Mobile View) */}
@@ -72,7 +77,10 @@ const Page = () => {
             <BsPersonExclamation className="text-xl text-black cursor-pointer hover:text-amber-500" />
             <CiSearch className="text-xl text-black cursor-pointer hover:text-amber-500" />
             <GoHeart className="text-xl text-black cursor-pointer hover:text-amber-500" />
+            {/* Cart Icon with Link */}
+            <Link href="/Cart">
             <BsCart3 className="text-xl text-black cursor-pointer hover:text-amber-500" />
+            </Link>
           </div>
         </div>
       )}

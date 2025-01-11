@@ -12,6 +12,7 @@ export default function Home() {
       <Hero />
 
       {/* Other components can go here*/} 
+      
     </main>
   );
 }
