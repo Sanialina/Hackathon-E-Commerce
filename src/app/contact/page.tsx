@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import { FaMapMarkerAlt, FaPhoneAlt, FaClock } from 'react-icons/fa';
 
@@ -6,22 +7,25 @@ const ContactPage = () => {
     <div>
       {/* Background Image Section */}
       <div
-        className="relative bg-cover bg-center h-[300px] flex items-center justify-center"
-        style={{
-          backgroundImage: "url('/pg2-1.jpg')",
-        }}
-      >
-        <div className="absolute inset-0 bg-white opacity-50"></div>
-        <div className="relative z-10 text-center">
-          <img
-            src="/pg2-logo.png"
-            alt="Logo"
-            className="mx-auto mb-4 w-24 h-24"
-          />
-          <p className="text-black text-lg font-semibold">Home &gt; Contact</p>
-        </div>
-      </div>
-
+              className="relative w-full h-screen bg-cover bg-center flex flex-col items-center justify-center"
+              style={{ backgroundImage: "url('/pg2-1.jpg')" }}
+            >
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-white bg-opacity-50"></div>
+      
+              {/* Logo */}
+              <div className="relative z-10">
+                <Image src="/pg2-logo.png" alt="Logo" width={150} height={150} className="mx-auto" />
+              </div>
+      
+              {/* Shop Header */}
+              <div className="relative z-10 text-center text-black mt-4">
+                <h1 className="text-4xl md:text-5xl font-bold">Shop</h1>
+                <p className="text-sm md:text-lg mt-2">
+                  <span className="text-black">Home</span> <span className="mx-2">&gt;</span> Shop
+                </p>
+              </div>
+            </div>
       {/* Contact Info Section */}
       <div className="container mx-auto py-10 px-4">
         <h1 className="text-2xl font-bold text-center mb-6">
