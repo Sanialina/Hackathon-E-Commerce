@@ -19,9 +19,9 @@ const page = () => {
         
                 {/* Shop Header */}
                 <div className="relative z-10 text-center text-black mt-4">
-                  <h1 className="text-4xl md:text-5xl font-bold">Shop</h1>
+                  <h1 className="text-4xl md:text-5xl font-bold">About</h1>
                   <p className="text-sm md:text-lg mt-2">
-                    <span className="text-black">Home</span> <span className="mx-2">&gt;</span> Shop
+                    <span className="text-black">Home</span> <span className="mx-2">&gt;</span> About
                   </p>
                 </div>
               </div>
