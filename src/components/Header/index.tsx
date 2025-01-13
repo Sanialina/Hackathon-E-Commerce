@@ -29,7 +29,7 @@ const Page = () => {
 
         {/* About Item */}
         <Link
-          href="/about"
+          href="/About"
           className="w-[49px] h-[24px] text-black text-sm font-medium text-left flex items-center hover:underline">
           About
         </Link>
@@ -72,9 +72,11 @@ const Page = () => {
 
       {/* Dropdown Menu */}
       {isDropdownOpen && (
-        <div className="md:hidden absolute right-[20px] top-[50px] bg-[#FBEBB5] shadow-lg rounded-md p-2">
+        <div className="md:hidden absolute right-[20px] top-[50px] bg-[#FBEBB5] shadow-lg rounded-md p-2 z-50">
           <div className="flex flex-col items-start gap-4">
+            <Link href="/myAccount">
             <BsPersonExclamation className="text-xl text-black cursor-pointer hover:text-amber-500" />
+            </Link>
             <CiSearch className="text-xl text-black cursor-pointer hover:text-amber-500" />
             <GoHeart className="text-xl text-black cursor-pointer hover:text-amber-500" />
             {/* Cart Icon with Link */}
