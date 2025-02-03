@@ -6,13 +6,22 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "import-data": "node ./src/sanity/scripts/importSanityData.mjs"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@sanity/client": "^6.27.2",
+    "@sanity/image-url": "^1.1.0",
+    "@sanity/vision": "^3.71.1",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
     "next": "15.1.0",
+    "next-sanity": "^9.8.39",
+    "node-fetch": "^3.3.2",
+    "object-hash": "^3.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0"

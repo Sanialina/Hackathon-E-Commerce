@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { IoCalendarClearOutline } from "react-icons/io5";
 import { FiClock } from "react-icons/fi";
 
@@ -130,11 +131,16 @@ const Hero = () => {
     </div>
 
     {/* View More Button */}
+    
     <div className="text-center mt-8 text-lg">
-        <button className="px-8 py-3 text-black underline">
-            View More
-        </button>
+    <Link href="/viewMore">
+    <button className="px-8 py-3 bg-gradient-to-r from-yellow-400 to-yellow-600 text-white font-semibold rounded-lg shadow-md hover:scale-105 transition-transform duration-300 hover:from-yellow-500 hover:to-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+    View More
+</button>
+
+        </Link>
     </div>
+    
 </section>
 
 {/* Fourth Section */}
